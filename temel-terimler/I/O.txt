@@ -1,0 +1,71 @@
+Sergen, I/O yazılım dünyasında en çok duyduğun kısaltmalardan biridir.
+
+🔵 I/O Ne Demek? (Basit Açıklama)
+
+I/O = Input / Output
+Okunuşu: “ay o”
+
+Türkçesi: Girdi / Çıktı işlemleri
+
+🔵 I/O İşlemleri Nedir?
+
+Bir programın dış dünya ile iletişim kurmak için yaptığı tüm işlemlere I/O işlemleri denir.
+
+Input (Girdi):
+
+Programın dışarıdan aldığı her şey:
+
+Dosya okumak
+
+Klavyeden veri almak
+
+Network’ten veri çekmek (API isteği)
+
+Veritabanından veri almak
+
+Output (Çıktı):
+
+Programın dışarıya verdiği her şey:
+
+Dosyaya yazmak
+
+Ekrana console.log ile yazmak
+
+Network'e istek göndermek
+
+Bir dosya oluşturmak
+
+🔵 En Basit Örnekler
+1) Klavye girişi (Input)
+const readline = require("readline");
+
+2) Console’a yazmak (Output)
+console.log("Merhaba Sergen!");
+
+3) Dosya okumak (Input)
+const fs = require("fs");
+fs.readFileSync("test.txt", "utf8");
+
+4) Dosyaya yazmak (Output)
+fs.writeFileSync("data.json", JSON.stringify(obj));
+
+
+🔵 Neden Önemli?
+
+Çünkü I/O işlemleri her zaman yavaştır.
+
+Diskten dosya okumak
+
+İnternetten veri almak
+
+Veritabanına bağlanmak
+
+bunların hepsi zaman alır. Node.js'in asenkron yapısının sebebi de I/O işlemlerini bloklamamak içindir.
+
+🔵 Özet
+Terim	Okunuşu     	Anlamı
+I/O	    ay-o	    Girdi/Çıktı
+Input	input	    Programın aldığı veri
+Output	output	    Programın verdiği veri
+
+İstersen sana I/O işlemlerinin Node.js ile nasıl yönetildiğini (event loop, non-blocking I/O) görsel gibi çok net bir anlatımla da açıklayabilirim.
