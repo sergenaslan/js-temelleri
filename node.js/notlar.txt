@@ -1,0 +1,5 @@
+node.js 
+Node.js, JavaScript'i tarayıcıdan bağımsız olarak çalıştırmamızı sağlayan; sunucu kurma, 
+API yazma, dosya okuma-yazma gibi backend işlemlerini yapabilen bir çalışma ortamıdır.
+
+node dosya ismi.js komutu ile js dosyasını node.js de çalıştırabiliriz.
