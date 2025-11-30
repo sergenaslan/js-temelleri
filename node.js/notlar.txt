@@ -3,3 +3,75 @@ Node.js, JavaScript'i tarayıcıdan bağımsız olarak çalıştırmamızı sağ
 API yazma, dosya okuma-yazma gibi backend işlemlerini yapabilen bir çalışma ortamıdır.
 
 node dosya ismi.js komutu ile js dosyasını node.js de çalıştırabiliriz.
+
+
+
+
+🚀 Derin öğrenme → doğru sıralama
+✔ 1. TEMEL
+
+createServer
+
+request
+
+response
+
+HTTP protokolü
+
+Event loop
+
+BUNLARI ÇÖZDÜN ✔️
+
+✔ 2. ORTA SEVİYE
+
+Router mantığı
+
+Body parse
+
+Cookie parse
+
+Middleware mantığının temeli
+
+Status + header yönetimi
+
+Bunlara geldin.
+
+✔ 3. İLERİ SEVİYE
+
+Streaming
+
+Pipe
+
+TCP bağlantısı
+
+Backpressure
+
+SSE
+
+Low-level sockets
+
+Custom framework yazma
+
+Bunlara doğru gidiyorsun.
+
+✔ 4. YÜKSEK SEVİYE
+
+Express
+
+NestJS
+
+Fastify
+
+Kendi middleware’ini yazma
+
+Rate limiter oluşturma
+
+JWT auth
+
+Redis cache
+
+Reverse proxy
+
+Load balancing
+
+Bu seviyeye geldiğinde sen resmen yazılım mühendisisin.

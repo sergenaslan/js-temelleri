@@ -465,5 +465,76 @@ Load balancer header’larını kullanma
 Büyük dosya yönetimi
 
 Veri akışı yönlendirme (pipe)
+
+----------------22222222222222222222222222222222222222222-------------------------------
+
+🚀 2. response (res) ile Yapabileceklerin
+
+Response tarayıcıya gönderdiğin cevaptır.
+
+✔️ 2.1. Status code ekleme
+res.statusCode = 200;
+
+✔️ 2.2. Header yazma
+res.setHeader("Content-Type", "application/json");
+
+✔️ 2.3. Response gövdesi yazma
+res.write("Hello");
+
+
+Birden fazla kez çağrılabilir.
+
+✔️ 2.4. Response’u bitirme
+res.end("Bitti");
+
+✔️ 2.5. JSON döndürme
+res.writeHead(200, { "Content-Type": "application/json" });
+res.end(JSON.stringify({ message: "OK" }));
+
+✔️ 2.6. Redirect yapma
+res.writeHead(302, { Location: "/login" });
+res.end();
+
+✔️ 2.7. Cookie gönderme
+res.setHeader("Set-Cookie", "token=12345; HttpOnly");
+
+✔️ 2.8. HTML döndürme
+res.writeHead(200, {"Content-Type": "text/html"});
+res.end("<h1>Anasayfa</h1>");
+
+✔️ 2.9. Dosya gönderme (statik dosya servisi)
+import fs from "fs";
+
+const html = fs.readFileSync("index.html");
+res.writeHead(200, { "Content-Type": "text/html" });
+res.end(html);
+
+🔥 Kısacası response ile:
+Status gönderirsin
+Header gönderirsin
+Body yazarsın
+JSON döndürürsün
+HTML döndürürsün
+Dosya gönderirsin
+Cookie ayarlarsın
+Redirect yaparsın
+API cevabı üretirsin
+
+
+
+
+--------11111111111111111111---------------
+🎯 İkisi birlikte nasıl çalışır?
+Örnek: Router mantığı
+
+if (req.url === "/" && req.method === "GET") {
+    res.writeHead(200, { "Content-Type": "text/plain" });
+    res.end("Anasayfa");
+}
+
+if (req.url === "/api" && req.method === "GET") {
+    res.writeHead(200, { "Content-Type": "application/json" });
+    res.end(JSON.stringify({ ok: true }));
+}
 */
 
